@@ -1,3 +1,4 @@
+
 import axios from 'axios'
 
 const api = axios.create({
@@ -7,22 +8,15 @@ const api = axios.create({
 
 export async function fetchSummary(startDate, endDate) {
   const response = await api.get('/summary/', {
-    params: {
-      start_date: startDate,
-      end_date: endDate,
-    },
+    params: { start_date: startDate, end_date: endDate },
   })
-
   return response.data
 }
 
 export async function fetchComparison(startDate, endDate) {
   const response = await api.get('/comparison/', {
-    params: {
-      start_date: startDate,
-      end_date: endDate,
-    },
+    params: { start_date: startDate, end_date: endDate },
   })
-
   return response.data
 }
+
