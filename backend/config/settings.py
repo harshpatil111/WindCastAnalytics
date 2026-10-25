@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-k^7xnb%f6me0qgoivj%zsuss9$b-+fr79%i0nld4vxq_ud0x00
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ "windcastanalytics-backend.onrender.com", "localhost", "127.0.0.1", ]
 
 
 # Application definition
